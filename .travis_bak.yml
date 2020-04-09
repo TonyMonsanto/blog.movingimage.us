@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+- 2.6.3
+before_script:
+- pip install --user awscli
+- rm -rf public
+script:
+- bundle exec jekyll build
+branches:
+  only:
+  - master
