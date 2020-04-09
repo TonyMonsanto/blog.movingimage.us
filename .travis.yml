@@ -1,13 +1,8 @@
 language: ruby
-rvm:
-- 2.6.3
-before_script:
-- pip install --user awscli
+before script:
 - rm -rf public
-- bundle exec jekyll build
 script:
-- aws s3 sync public/ s3://momistatic --acl pubic-read --delete
-- aws cloudfront create-invalidation --distribution-id 
+- bundle exec jekyll
 branches:
-  only:
-  - master
+ only:
+ - master
