@@ -1,0 +1,512 @@
+/**
+GLOBAL
+ */
+
+$backgroundColor: #ffffff;
+$bodyColor: #000000;
+$bodyFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+  background-image: url("/assets/img/global-bg.gif");
+  background-repeat: repeat;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.4rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+
+.darker {
+  font-weight: 700;
+}
+
+/** GLOBAL COLORS */
+.clr-light-green {
+  color: #a6ce3b !important;
+}
+.bd-light-green {
+  border-color: #a6ce3b !important;
+}
+.bg-light-green {
+  background: #a6ce3b !important;
+}
+.btn-light-green {
+  background: #a6ce3b !important;
+}
+
+/***/
+.clr-green {
+  color: #1cac4e !important;
+}
+.bd-green {
+  border-color: #1cac4e !important;
+}
+.bg-green {
+  background: #1cac4e !important;
+}
+
+.btn-green {
+  background: #1cac4e !important;
+}
+/***/
+.clr-light-blue {
+  color: #149fda !important;
+}
+.bd-light-blue {
+  border-color: #149fda !important;
+}
+
+.btn-light-blue {
+  background: #149fda !important;
+}
+.bg-light-blue {
+  background: #149fda !important;
+}
+/***/
+.clr-teal {
+  color: #176a93 !important;
+}
+.bd-teal {
+  border-color: #176a93 !important;
+}
+.bg-teal {
+  background: #176a93 !important;
+}
+.btn-teal {
+  background: #176a93 !important;
+}
+/***/
+.clr-blue {
+  color: #2e3192 !important;
+}
+.bd-blue {
+  border-color: #2e3192 !important;
+}
+.bg-blue {
+  background: #2e3192 !important;
+}
+
+.btn-blue {
+  background: #2e3192 !important;
+}
+/***/
+.clr-purple {
+  color: #572c7b !important;
+}
+.bd-purple {
+  border-color: #572c7b !important;
+}
+.bg-purple {
+  background: #572c7b !important;
+}
+
+.btn-purple {
+  background: #572c7b !important;
+}
+/***/
+.clr-magenta {
+  color: #ec008c !important;
+}
+.bd-magenta {
+  border-color: #ec008c !important;
+}
+.bg-magenta {
+  background: #ec008c !important;
+}
+
+.btn-magenta {
+  background: #ec008c !important;
+}
+/***/
+.clr-pink {
+  color: #e57eb3 !important;
+}
+.bd-pink {
+  border-color: #e57eb3 !important;
+}
+.bg-pink {
+  background: #e57eb3 !important;
+}
+
+.btn-pink {
+  background: #e57eb3 !important;
+}
+/***/
+.clr-red {
+  color: #ed2233 !important;
+}
+.bd-red {
+  border-color: #ed2233 !important;
+}
+.bg-red {
+  background: #ed2233 !important;
+}
+
+.btn-red {
+  background: #ed2233 !important;
+}
+/***/
+.clr-orange {
+  color: #f37125 !important;
+}
+.bd-orange {
+  border-color: #f37125 !important;
+}
+.bg-orange {
+  background: #f37125 !important;
+}
+
+.btn-orange {
+  background: #f37125 !important;
+}
+/***/
+.clr-yellow {
+  color: #fdba31 !important;
+}
+.bd-yellow {
+  border-color: #fdba31 !important;
+}
+.bg-yellow {
+  background: #fdba31 !important;
+}
+
+.btn-yellow {
+  background: #fdba31 !important;
+}
+
+/***/
+.clr-momi-blue {
+  color: #e8f6fd !important;
+}
+.bd-momi-blue {
+  border-color: #e8f6fd !important;
+}
+.bg-momi-blue {
+  background: #e8f6fd !important;
+}
+
+.btn-momi-blue {
+  background: #e8f6fd !important;
+}
+
+
+/**
+Bootstrap Override
+ */
+.form-control {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: 1px solid #a4a8ab;
+  padding: 1px 5px;
+  height: calc(1.8rem + 2px);
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  padding: 0.15rem 0.75rem;
+}
+.btn-primary {
+  background: #a5a6aa;
+  border-color: #a5a6aa;
+}
+.btn-primary:hover {
+  background: #a5a6aa;
+  border-color: #a5a6aa;
+  opacity: 0.8;
+}
+
+/**
+Header / Main Navigation
+ */
+header ul.navbar-nav li a {
+  color: #161415;
+  font-size: 1.2em;
+  line-height: normal;
+  line-height: 1em;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header ul.navbar-nav li.active a {
+  color: #fff;
+  background: #dddee0;
+  line-height: normal;
+}
+@media (min-width: 992px) {
+  .navbar-toggler-container {
+    display: none;
+  }
+}
+.navbar-toggler {
+  padding: 7px 14px 7px 0;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(102,102,102, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+
+/** HOVER */
+ul.nav li.active {
+  color: rgb(102, 102, 102);
+  background: #666666;
+}
+ul.nav li:hover {
+  opacity: 0.8;
+}
+.card.card-bordered {
+  padding: 4px;
+}
+.card.card-bordered .card-body {
+  width: 100%;
+  padding: 15px;
+  margin: 0;
+  min-height: 50px;
+  display: block;
+}
+.card.card-bordered .card-body a {
+  font-style: italic;
+  border-bottom: 1px solid;
+  color: #333;
+  text-decoration: none !important;
+}
+.card.card-bordered .card-body a:hover {
+  color: #000;
+}
+/*
+Global Navigation
+*/
+.nav,
+.navbar-nav {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/**
+HEADER
+ */
+
+.jumbotron {
+  background-image: url("/assets/img/jumbotron.png");
+  color: white;
+  padding-bottom: .5rem;
+  background-color: rgb(232,246,253);
+}
+.jumbotron p {
+color: rgb(232, 246, 253);
+font-size: 1.1rem;
+}
+.jumbotron btn {
+  color: white;
+}
+.jumbotron a {
+  color: white;
+}
+.jumbotron-content {
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+.display-momi {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 5.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+.navbar-nav {
+  color: black;
+  font-size: 1.5em;
+  line-height: 1.8rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.navbar-nav .nav-link {
+  margin-right: 2rem;
+}
+.dropdown-menu {
+  background-color: #e8f6fd;
+  padding-bottom:0;
+}
+
+ .dropdown-item { 
+  color: white;
+  font-size: .8rem;
+  margin-bottom: 2px;
+
+}
+.dropdown-item:hover { 
+  opacity: 0.8;
+  color:whitesmoke;
+}
+.navbar-toggler-icon {
+  color: white;
+}
+.nav-link {
+  display: block;
+  padding: 0;
+}
+
+/**
+Social Media
+ */
+.social-media-links {
+  position: fixed;
+  top: 85%;
+  right:0;
+  -webkit-transform: translateY(-85%);
+  -ms-transform: translateY(-85%);
+  transform: translateY(-85%);
+  z-index: 1;
+}
+
+.social-media-links a {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.social-media-links a:hover {
+  background-color: darkgray;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.instagram {
+  background: #517fa4;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+
+/**
+POSTS
+*/
+.card {
+  border: 5px solid;
+}
+
+/** HOVER */
+ul.nav li.active {
+  color: rgb(102, 102, 102);
+  background: #666666;
+}
+ul.nav li:hover {
+  opacity: 0.8;
+}
+.card.card-bordered {
+  padding: 4px;
+}
+.card.card-bordered .card-body {
+  width: 100%;
+  padding: 5px;
+  margin: 0;
+  min-height: 50px;
+  display: block;
+}
+.card.card-bordered .card-body a {
+  font-style: italic;
+  border-bottom: 1px solid;
+  color: #333;
+  text-decoration: none !important;
+}
+.card.card-bordered .card-body a:hover {
+  color: #000;
+}
+/**
+Card Override
+ */
+.card {
+  border: none;
+  color: #dadbdd;
+  background: #dadbdd;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  width: 100%;
+}
+.card .card-body {
+  color: #161415;
+}
+.card .card-body-sm {
+  padding: 10px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #000;
+  font-weight: 500;
+}
+.card-footer {
+  background-color: rgb(232,246,253);;
+}
+
+
+
+/* FOOTER */
+
+footer {
+  margin: 25px 25px;
+  font-size: .9rem;
+
+}
+
+.footer-text {
+  color: #a5a7aa;
+
+}
+
+.footer a {
+
+  cursor: pointer;
+  color: #a5a7aa;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
